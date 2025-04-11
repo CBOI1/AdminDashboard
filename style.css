@@ -19,6 +19,7 @@ body {
     gap: 1rem;
     padding: 15px;
     background-color: #75f079;
+    border: 1px solid black;
 }
 
 
@@ -36,8 +37,38 @@ label {
     vertical-align: middle;
 }
 
-.main-content {
+.layout-right {
     display: grid;
-    grid-template-columns: repeat(autofit, minmax(150px, 1fr));
+    grid-template-rows: 60px 1fr;
 }
 
+.layout-foreground {
+    background-color: #bccbde;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    
+}
+
+.content-card {
+    background-color: #fff7f7;
+    border-radius: 5px;
+    padding: 5px;
+    border-left: 8px solid rebeccapurple;
+    text-align: left;
+}
+
+.content-card .title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.content-card .content {
+    font-size: 14px;
+}
